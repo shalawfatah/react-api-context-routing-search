@@ -10,6 +10,7 @@ const PostSingle = () => {
         return post.title === title
     })
     const history = useHistory()
+    
     return (
         <div>
             <h1>{singlePost.title}</h1>
@@ -20,13 +21,6 @@ const PostSingle = () => {
                 }}
             >
                 Go back
-            </button>
-            <button
-                onClick={() => {
-                    history.goForward();
-                }}
-            >
-                Go Forward
             </button>
         </div>
     )
